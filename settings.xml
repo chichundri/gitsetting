@@ -140,7 +140,7 @@ under the License.
         <enabled>true</enabled>
       </snapshots>
       <id>nexus</id>
-      <name>nexus_snapshot</name>
+      <name>nexus</name>
       <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
     </repository>
   </repositories>
@@ -153,7 +153,7 @@ under the License.
         <enabled>false</enabled>
       </snapshots>
       <id>nexus</id>
-      <name>nexus_release</name>
+      <name>nexus</name>
       <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/releases/</url>
       </pluginRepository>
     </pluginRepositories>
