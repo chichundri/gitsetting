@@ -161,6 +161,12 @@ under the License.
       <url>http://my.repository.com/repo/path</url>
     </mirror>
      -->
+      <mirror>
+        <id>nexus</id>
+        <mirrorOf>*</mirrorOf>
+        <name>Nexus repo name</name>
+        <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/</url>
+      </mirror>
   </mirrors>
 
   <!-- profiles
