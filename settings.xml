@@ -127,42 +127,6 @@ under the License.
       <username>admin</username>
       <password>admin123</password>
     </server>
-      
-<profiles>
-  <profile>
-    <id>default</id>
-    <repositories>
-      <repository>
-        <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>nexus</id>
-      <name>nexus</name>
-      <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>nexus</id>
-      <name>nexus</name>
-      <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/releases/</url>
-      </pluginRepository>
-    </pluginRepositories>
-  </profile>
-</profiles>
-
-<activeProfiles>
-  <activeProfile>default</activeProfile>
-</activeProfiles>
 
     <!-- Another sample, using keys to authenticate.
     <server>
@@ -285,6 +249,36 @@ under the License.
       </properties>
     </profile>
     -->
+    <profile>
+        <id>default</id>
+        <repositories>
+        <repository>
+            <releases>
+            <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>nexus</id>
+            <name>nexus</name>
+            <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+            <pluginRepository>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <id>nexus</id>
+                <name>nexus</name>
+                <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/releases/</url>
+            </pluginRepository>
+    </pluginRepositories>
+    </profile>
+
   </profiles>
 
   <!-- activeProfiles
@@ -295,4 +289,9 @@ under the License.
     <activeProfile>anotherAlwaysActiveProfile</activeProfile>
   </activeProfiles>
   -->
+
+<activeProfiles>
+  <activeProfile>default</activeProfile>
+</activeProfiles>
+
 </settings>
