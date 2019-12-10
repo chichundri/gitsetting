@@ -268,7 +268,7 @@ under the License.
             </snapshots>
             <id>nexus</id>
             <name>nexus</name>
-            <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/nexus/</url>
+            <url>http://ec2-54-175-161-158.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
     <pluginRepositories>
